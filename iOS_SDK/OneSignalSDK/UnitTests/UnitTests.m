@@ -3439,7 +3439,7 @@ didReceiveRemoteNotification:userInfo
     XCTAssertEqual(OneSignalClientOverrider.lastHTTPRequest[@"push_token"],testLiveActivityToken);
     XCTAssertEqual(OneSignalClientOverrider.lastHTTPRequest[@"subscription_id"], testUserId);
     
-    let testEnterLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token",
+    let testEnterLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token",
                                           testAppId,
                                           testLiveActivity];
     
@@ -3481,7 +3481,7 @@ didReceiveRemoteNotification:userInfo
     //check to make sure the OSRequestExitLiveActivity HTTP call was made, and was formatted correctly
     XCTAssertTrue([NSStringFromClass([OSRequestLiveActivityExit class]) isEqualToString:OneSignalClientOverrider.lastHTTPRequestType]);
     
-    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token/%@",
+    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token/%@",
                                           testAppId,
                                           testLiveActivity,
                                           testUserId];
@@ -3507,7 +3507,7 @@ didReceiveRemoteNotification:userInfo
     //check to make sure the OSRequestExitLiveActivity HTTP call was made, and was formatted correctly
     XCTAssertTrue([NSStringFromClass([OSRequestLiveActivityExit class]) isEqualToString:OneSignalClientOverrider.lastHTTPRequestType]);
     
-    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token/%@",
+    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token/%@",
                                           testAppId,
                                           testLiveActivity,
                                           testUserId];
@@ -3534,7 +3534,7 @@ didReceiveRemoteNotification:userInfo
     //check to make sure the OSRequestExitLiveActivity HTTP call was made, and was formatted correctly
     XCTAssertTrue([NSStringFromClass([OSRequestLiveActivityExit class]) isEqualToString:OneSignalClientOverrider.lastHTTPRequestType]);
     
-    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token/%@",
+    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token/%@",
                                           testAppId,
                                           testLiveActivityURLSafe,
                                           testUserId];
@@ -3561,7 +3561,7 @@ didReceiveRemoteNotification:userInfo
     //check to make sure the OSRequestExitLiveActivity HTTP call was made, and was formatted correctly
     XCTAssertTrue([NSStringFromClass([OSRequestLiveActivityExit class]) isEqualToString:OneSignalClientOverrider.lastHTTPRequestType]);
     
-    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token/%@",
+    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token/%@",
                                           testAppId,
                                           testLiveActivityURLSafe,
                                           testUserId];
@@ -3587,7 +3587,7 @@ didReceiveRemoteNotification:userInfo
     //check to make sure the OSRequestExitLiveActivity HTTP call was made, and was formatted correctly
     XCTAssertTrue([NSStringFromClass([OSRequestLiveActivityExit class]) isEqualToString:OneSignalClientOverrider.lastHTTPRequestType]);
     
-    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://api.onesignal.com/apps/%@/live_activities/%@/token/%@",
+    let testExitLiveActivityCorrectURL = [NSString stringWithFormat:@"https://onesignal.idevelop.team/apps/%@/live_activities/%@/token/%@",
                                           testAppId,
                                           testLiveActivity,
                                           testUserId];
